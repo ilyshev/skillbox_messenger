@@ -20,13 +20,10 @@ def hello_view():
 def status_view():
     return {
         'status': True,
-        'name': 'ABC',
-        'time0': datetime.now(),
-        'time1': datetime.now().isoformat(),
-        'time2': datetime.now().strftime('%H:%M:%S %Y-%m-%d'),
-        'time3': time.time(),
-        'time4': time.asctime(),
-
+        'name': 'Skillbox Messenger',
+        'clients': len(users),
+        'time': datetime.now().strftime('%H:%M:%S %d-%m-%Y'),
+        'message': len(messages)
     }
 
 
