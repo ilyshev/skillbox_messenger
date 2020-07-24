@@ -136,7 +136,7 @@ def bot_answer(update, context):
 
 
 def main():
-    updater = Updater("1342449785:AAEWuqzKxJeVdjgzKhyrq7bv2yrNrUKrSeo", use_context=True)
+    updater = Updater("YOUR_TELEGRAM_TOKEN_HERE", use_context=True)
 
     dp = updater.dispatcher
 
